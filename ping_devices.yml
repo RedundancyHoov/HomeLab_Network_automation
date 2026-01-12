@@ -1,0 +1,10 @@
+---
+- name: Test reachability to homelab devices
+  hosts: homelab
+  gather_facts: no
+
+  tasks:
+    - name: Ping device from control node
+      ansible.builtin.ping:
+
+
